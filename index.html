@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="sunlion-net 组织站点" />
+    <title>sunlion-net</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <div class="brand">
+                <div class="brand__name">sunlion-net</div>
+                <div class="brand__tagline">组织站点（GitHub Pages）</div>
+            </div>
+
+            <nav class="nav" aria-label="主导航">
+                <a href="#about">关于</a>
+                <a href="#projects">项目</a>
+                <a href="#contact">联系</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">欢迎来到 sunlion-net</h1>
+                <p class="hero__subtitle">
+                    这是组织的默认主页。你可以在这里放：组织介绍、项目入口、文档链接与联系方式。
+                </p>
+
+                <div class="hero__actions">
+                    <a class="button" href="https://github.com/sunlion-net" rel="noopener noreferrer">前往 GitHub 组织</a>
+                    <a class="button button--secondary" href="#projects">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>关于</h2>
+                <p>
+                    将这段文字替换成你的组织介绍：关注方向、核心成员、协作方式或愿景。
+                </p>
+                <ul class="list">
+                    <li>定位：示例——工程实践 / 开源工具 / 技术分享</li>
+                    <li>维护：示例——由组织成员共同维护</li>
+                    <li>站点：静态页面，提交到 main 分支自动发布</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>项目</h2>
+                <p>把常用仓库/产品放在这里（替换链接与描述）。</p>
+
+                <div class="cards" role="list">
+                    <article class="card" role="listitem">
+                        <h3 class="card__title">项目 A</h3>
+                        <p class="card__desc">一句话描述项目内容与用途。</p>
+                        <a class="card__link" href="https://github.com/sunlion-net" rel="noopener noreferrer">打开仓库 →</a>
+                    </article>
+
+                    <article class="card" role="listitem">
+                        <h3 class="card__title">项目 B</h3>
+                        <p class="card__desc">一句话描述项目内容与用途。</p>
+                        <a class="card__link" href="https://github.com/sunlion-net" rel="noopener noreferrer">打开仓库 →</a>
+                    </article>
+
+                    <article class="card" role="listitem">
+                        <h3 class="card__title">文档 / Wiki</h3>
+                        <p class="card__desc">把文档入口集中到一个地方，便于访问。</p>
+                        <a class="card__link" href="https://github.com/sunlion-net" rel="noopener noreferrer">打开入口 →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>联系</h2>
+                <p>
+                    建议放一个公开联系方式（例如邮箱或讨论区）。如果暂时没有，就先放 GitHub Issues 作为入口。
+                </p>
+                <div class="contact">
+                    <div class="contact__item">
+                        <div class="contact__label">GitHub</div>
+                        <div><a href="https://github.com/sunlion-net"
+                                rel="noopener noreferrer">https://github.com/sunlion-net</a></div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="contact__label">邮箱</div>
+                        <div><span class="muted">（待补充）</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div>© <span id="year"></span> sunlion-net</div>
+            <div class="muted">Built with GitHub Pages</div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var el = document.getElementById('year');
+            if (el) el.textContent = String(new Date().getFullYear());
+        })();
+    </script>
+</body>
+
+</html>
