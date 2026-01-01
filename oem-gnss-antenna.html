@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="GNSS 天线 OEM 定制服务：无源双频、有源双频、四星全频内置陶瓷" />
+    <title>GNSS 天线 OEM 定制服务</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <div class="brand">
+                <div class="brand__name">sunlion-net</div>
+                <div class="brand__tagline">OEM 定制服务</div>
+            </div>
+
+            <nav class="nav" aria-label="主导航">
+                <a href="/index.html">首页</a>
+                <a href="#categories">产品类别</a>
+                <a href="#how">对接流程</a>
+                <a href="#notes">口径说明</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">GNSS 天线 OEM 定制服务</h1>
+                <p class="hero__subtitle">
+                    面向客户提供可选频段、尺寸、线材与接头的 GNSS 天线定制交付。本文档为对外规格口径，不包含内部型号编码。
+                </p>
+                <div class="hero__actions">
+                    <a class="button" href="#categories">查看可定制类别</a>
+                    <a class="button button--secondary" href="#how">了解对接流程</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="section">
+            <div class="container">
+                <h2>产品类别（3 类）</h2>
+                <p class="muted">下面三类可按需求组合频段、尺寸、厚度、接头与线长（以最终评估与确认单为准）。</p>
+
+                <div class="cards" role="list">
+                    <article class="card" role="listitem">
+                        <h3 class="card__title">1) 无源双频单选</h3>
+                        <p class="card__desc">贴片陶瓷，无放大器；适合已有前端/模组具备放大能力的场景。</p>
+                        <a class="card__link" href="/oem-gnss-antenna-01-passive-dual.html">查看对外规格 →</a>
+                    </article>
+
+                    <article class="card" role="listitem">
+                        <h3 class="card__title">2) 有源双频单选</h3>
+                        <p class="card__desc">贴片陶瓷 + LNA；同轴一根线输出射频（可选支持同轴叠加供电）。</p>
+                        <a class="card__link" href="/oem-gnss-antenna-02-active-dual.html">查看对外规格 →</a>
+                    </article>
+
+                    <article class="card" role="listitem">
+                        <h3 class="card__title">3) 有源四星全频内置陶瓷（IP67）</h3>
+                        <p class="card__desc">GPS/BDS/GLONASS/GALILEO，多频段组合可选；适合车载/交通等对环境要求更高场景。</p>
+                        <a class="card__link" href="/oem-gnss-antenna-03-active-quad-ceramic.html">查看对外规格 →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="how" class="section">
+            <div class="container">
+                <h2>对接流程（建议）</h2>
+                <ul class="list">
+                    <li>需求确认：频段/极化/尺寸限制/安装方式/线长与接头/目标应用环境（是否需要 IP67）。</li>
+                    <li>方案推荐：给出可选规格组合（频段款式、尺寸方案、接头与线材）。</li>
+                    <li>打样验证：样品测试与安装验证（驻波比、增益口径、供电与整机兼容）。</li>
+                    <li>量产交付：锁定版本（确认单/图纸/检验口径），按批次出货。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="notes" class="section">
+            <div class="container">
+                <h2>口径说明（dB / dBi）</h2>
+                <p class="muted">
+                    dB 用于描述放大器/链路增益（例如 LNA 增益）；dBi 用于描述天线本体相对各向同性天线的辐射增益。
+                    对外沟通时建议分别写清“天线增益（dBi）”与“LNA 增益（dB）”。
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div>© <span id="year"></span> sunlion-net</div>
+            <div class="muted">Built with GitHub Pages</div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var el = document.getElementById('year');
+            if (el) el.textContent = String(new Date().getFullYear());
+        })();
+    </script>
+</body>
+
+</html>

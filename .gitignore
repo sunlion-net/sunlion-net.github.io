@@ -1,0 +1,9 @@
+# Local-only drafts / notes (do not commit)
+local-md/
+
+# macOS
+.DS_Store
+
+# Local screenshots (do not commit)
+screenshots/
+截图/
